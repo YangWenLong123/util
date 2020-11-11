@@ -1,0 +1,22 @@
+{
+  "name": "util_alg",
+  "version": "0.0.1",
+  "description": "函数工具库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangWenLong123/util.git"
+  },
+  "author": "along",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangWenLong123/util/issues"
+  },
+  "homepage": "https://github.com/YangWenLong123/util#readme",
+  "devDependencies": {
+    "util_alg": "^0.0.1"
+  }
+}
