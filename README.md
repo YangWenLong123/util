@@ -38,7 +38,6 @@ const flag = Util.isObject({})
 ```
 
 ## API文档
-
 |    method                |   Description               |
 |--------------------------|-----------------------------|
 | Util.isObject()          |  [是否为对象类型数据]          |
