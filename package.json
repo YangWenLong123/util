@@ -1,6 +1,6 @@
 {
   "name": "util_alg",
-  "version": "0.1.2",
+  "version": "0.2.0-0",
   "description": "函数工具库",
   "main": "index.js",
   "scripts": {
