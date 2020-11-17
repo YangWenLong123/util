@@ -39,6 +39,7 @@ const flag = Util.isObject({})
 
 ## API文档
 
+<<<<<<< HEAD
 |    method                |   Description               |
 |--------------------------|-----------------------------|
 | Util.isObject()          |  [是否为对象类型数据]          |
@@ -58,3 +59,24 @@ const flag = Util.isObject({})
 | Util.isArrayBuffer()     |  [是否为buffer类型数据]       |
 | Util.isBlob()            |  [是否为Blob类型数据]         |
 | Util.isFinite()          |  [是否为数字]                |
+=======
+|    method                     |   Description       |   
+|----------------|-----------------------------------------|--------------|-----------|   
+| Util.isObject()|  [是否为对象类型数据]    
+| Util.isArray()|  [是否为数组类型数据]    
+| Util.isBoolean()|  [是否为布尔类型数据]    
+| Util.isString()|  [是否为字符类型数据]   
+| Util.isNumber()|  [是否为数字类型数据]   
+| Util.isUndefined()|  [是否为Undefined类型数据]   
+| Util.isNull()|  [是否为Null类型数据]   
+| Util.isFunction()|  [是否为函数类型数据]   
+| Util.isSymboll()|  [是否为Symboll类型数据]   
+| Util.isRegExp()|  [是否为正则类型数据]   
+| Util.isError()|  [是否为Error类型数据]   
+| Util.isDate()|  [是否为日期类型数据]   
+| Util.isMath()|  [是否为Math类型数据]   
+| Util.isGlobal()|  [是否为Global类型数据]   
+| Util.isArrayBuffer()|  [是否为buffer类型数据]    
+| Util.isBlob()|  [是否为Blob类型数据]   
+| Util.isFinite()|  [是否为数字]   
+>>>>>>> 91a4f3ea3b814e2f041148204d3d89af1d192661
