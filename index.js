@@ -3,7 +3,7 @@
  * @Author: along
  * @Date: 2020-11-11
  * @Last Modified by: along
- * @Last Modified time: 2020-11-11
+ * @Last Modified time: 2020-11-18
  */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
