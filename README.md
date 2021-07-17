@@ -7,53 +7,53 @@
 
 ##  安装使用
 
-1. 直接下载目录下的[index.js](https://github.com/YangWenLong123/util/blob/master/index.js)使用，支持UMD通用模块规范
+1. 直接下载目录下的[index.js](https://github.com/YangWenLong123/Zsdx/blob/master/index.js)使用，支持UMD通用模块规范
 2. 使用npm安装
 
 ### 浏览器:
 ``` html
   <script src="index.js"></script>
   <script>
-      const flag = Util.isObject({})
+      const flag = Zsdx.isObject({})
   </script>
 ```
 
 ### npm:
 ``` bash
-$ npm install --save-dev util_alg
+$ npm install --save-dev zsdx_fun
 ```
 
 webpack、RequireJS、SeaJS等
 
 ``` javascript
-const Util = require('util_alg')
-const flag = Util.isObject({})
+const Zsdx = require('Zsdx_alg')
+const flag = Zsdx.isObject({})
 ```
 
 **推荐使用方法**
 
 ``` javascript
-import Util from 'util_alg';
-const flag = Util.isObject({})
+import Zsdx from 'zsdx_fun';
+const flag = Zsdx.isObject({})
 ```
 
 ## API文档
 |    method                |   Description               |
 |--------------------------|-----------------------------|
-| Util.isObject()          |  [是否为对象类型数据]          |
-| Util.isArray()           |  [是否为数组类型数据]          |
-| Util.isBoolean()         |  [是否为布尔类型数据]          |
-| Util.isString()          |  [是否为字符类型数据]          |
-| Util.isNumber()          |  [是否为数字类型数据]          |
-| Util.isUndefined()       |  [是否为Undefined类型数据]    |
-| Util.isNull()            |  [是否为Null类型数据]         |
-| Util.isFunction()        |  [是否为函数类型数据]          |
-| Util.isSymboll()         |  [是否为Symboll类型数据]      |
-| Util.isRegExp()          |  [是否为正则类型数据]          |
-| Util.isError()           |  [是否为Error类型数据]        |
-| Util.isDate()            |  [是否为日期类型数据]          |
-| Util.isMath()            |  [是否为Math类型数据]         |
-| Util.isGlobal()          |  [是否为Global类型数据]       |
-| Util.isArrayBuffer()     |  [是否为buffer类型数据]       |
-| Util.isBlob()            |  [是否为Blob类型数据]         |
-| Util.isFinite()          |  [是否为数字]                |
+| Zsdx.isObject()          |  [是否为对象类型数据]          |
+| Zsdx.isArray()           |  [是否为数组类型数据]          |
+| Zsdx.isBoolean()         |  [是否为布尔类型数据]          |
+| Zsdx.isString()          |  [是否为字符类型数据]          |
+| Zsdx.isNumber()          |  [是否为数字类型数据]          |
+| Zsdx.isUndefined()       |  [是否为Undefined类型数据]    |
+| Zsdx.isNull()            |  [是否为Null类型数据]         |
+| Zsdx.isFunction()        |  [是否为函数类型数据]          |
+| Zsdx.isSymboll()         |  [是否为Symboll类型数据]      |
+| Zsdx.isRegExp()          |  [是否为正则类型数据]          |
+| Zsdx.isError()           |  [是否为Error类型数据]        |
+| Zsdx.isDate()            |  [是否为日期类型数据]          |
+| Zsdx.isMath()            |  [是否为Math类型数据]         |
+| Zsdx.isGlobal()          |  [是否为Global类型数据]       |
+| Zsdx.isArrayBuffer()     |  [是否为buffer类型数据]       |
+| Zsdx.isBlob()            |  [是否为Blob类型数据]         |
+| Zsdx.isFinite()          |  [是否为数字]                |
