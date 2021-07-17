@@ -1,101 +1,101 @@
  /*
  * @description: common function tool library
- * @Author: along
- * @Date: 2020-11-11
+ * @Author: ['along']
+ * @Date: 2021-07-17
  * @Last Modified by: along
- * @Last Modified time: 2020-11-18
+ * @Last Modified time: --
  */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) :
-            (global.Util = factory());
+            (global.Zsdx = factory());
 }(this, (function () {
     'use strict';
-    let Util = {};
+    let Zsdx = {};
 
     /**
      * @description 数据类型检测
      * @return  {Boolean}
      */
-    Util.isObject = function (a) {
+    Zsdx.isObject = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Object]';
     }
 
-    Util.isArray = function (a) {
+    Zsdx.isArray = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Array]';
     }
 
-    Util.isBoolean = function (a) {
+    Zsdx.isBoolean = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Boolean]';
     }
 
-    Util.isString = function (a) {
+    Zsdx.isString = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object String]';
     }
 
-    Util.isNumber = function (a) {
+    Zsdx.isNumber = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Number]';
     }
 
-    Util.isUndefined = function (a) {
+    Zsdx.isUndefined = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Undefined]';
     }
 
-    Util.isNull = function (a) {
+    Zsdx.isNull = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Null]';
     }
 
-    Util.isFunction = function (a) {
+    Zsdx.isFunction = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Function]';
     }
 
-    Util.isSymboll = function (a) {
+    Zsdx.isSymboll = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Symbol]';
     }
 
-    Util.isRegExp = function (a) {
+    Zsdx.isRegExp = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object RegExp]';
     }
 
-    Util.isError = function (a) {
+    Zsdx.isError = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Error]';
     }
 
-    Util.isDate = function (a) {
+    Zsdx.isDate = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Date]';
     }
 
-    Util.isMath = function (a) {
+    Zsdx.isMath = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object Math]';
     }
 
-    Util.isGlobal = function (a) {
+    Zsdx.isGlobal = function (a) {
         let type = Object.prototype.toString.call(a);
         return type == '[object global]';
     }
 
-    Util.isArrayBuffer = function (a) {
+    Zsdx.isArrayBuffer = function (a) {
         return a instanceof ArrayBuffer;
     }
 
-    Util.isBlob = function (a) {
+    Zsdx.isBlob = function (a) {
         return a instanceof Blob;
     }
 
-    Util.isFinite = function (a) {
+    Zsdx.isFinite = function (a) {
         return Number.isFinite(a);
     }
 
@@ -119,7 +119,7 @@
      * @description 复制粘贴
      */
 
+    // ...
 
-
-    return Util;
+    return Zsdx;
 })));
