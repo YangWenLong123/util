@@ -1,3 +1,3 @@
-let util = require('util_alg');
+let util = require('zsdx_fun');
 
 console.log(util)

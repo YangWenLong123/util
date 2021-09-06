@@ -4,17 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Util</title>
+    <title>Zsdx</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">zsdx_fun 测试用例</div>
 </body>
 <script src="../index.js" type="text/javascript"></script>
 <script>
-    {
-        console.log(Util.isObject({}) ? 'success' : 'error');
-        console.log(Util.isObject({a: 1}) ? 'success' : 'error');
-        console.log(!Util.isObject('') ? 'success' : 'error');
+    // 测试用例
+    let a = {
+        a:2,
+        b: {
+            c: 3,
+            d: {
+                e: 5
+            }
+        }
     }
+
+    let d = [
+        {name: 'jack', id: '1'},
+        {name: 'jack2', id: '1'},
+        {name: 'jack3', id: '2'},
+        {name: 'jack4', id: '3'},
+        {name: 'jack5', id: '4'}
+    ]
+
+    let e = [5,2,4,6,7,4,33,5];
+
+    let f = [
+        {id: 2, name: 'sale'},
+        {id: 4, name: 'sale2'},
+        {id: 3, name: 'sale3'},
+        {id: 26, name: 'sale4'},
+        {id: 21, name: 'sale5'}
+    ]
+
+    {
+        console.log(Zsdx.isObject({}) ? 'success' : 'error');
+        console.log(Zsdx.isNull(null) ? 'success null' : 'error');
+        console.log(Zsdx.isObject({a: 1}) ? 'success' : 'error');
+        console.log(!Zsdx.isObject('') ? 'success' : 'error');
+        console.log(Zsdx.dateFormat(new Date().getTime(), 'yyyy/MM/dd HH/mm/ss'));
+        console.log(Zsdx.getBrowser());
+        console.log(Zsdx.getOS());
+        console.log(Zsdx.ismobile());
+        console.log(Zsdx.deepCopy(a));
+        console.log(Zsdx.deepCopy(a));
+        let c = Zsdx.deepMerge({
+            a: {
+                c: 2
+            }
+        }, {
+            c: {
+                d: {
+                    e: 5
+                }
+            }
+        })
+        console.log(c);
+        console.log(Zsdx.removal(d, 'id'));
+        console.log(Zsdx.sortArray(f, type = 'quence', 'id'));
+        console.log(Zsdx.getURLParameters('https://www.along.ink?a=1&b=2'))
+        console.log(Zsdx.getID(12));
+
+        Zsdx.injectScript('https://cdn.bootcdn.net/ajax/libs/vue/3.0.6/vue.cjs.min.js');
+
+        // Zsdx.downloadUrl('http://cdn.zsdx.cn/student-app/images/logo4.png');
+    }
+
+    document.getElementById('app').addEventListener('click', () => {
+        Zsdx.copyValue(666, val => {
+            console.log(val);
+        })
+    }, false)
 </script>
 </html>
